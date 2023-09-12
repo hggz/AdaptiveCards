@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -185,7 +185,7 @@
 		6BE6C7C326E2F07C009E9171 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BE6C7C226E2F07C009E9171 /* sample.json */; };
 		6BE6C7C526E7CDD0009E9171 /* ColumnSet.Input.ChoiceSet.VerticalStretch.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BE6C7C426E7CDCF009E9171 /* ColumnSet.Input.ChoiceSet.VerticalStretch.json */; };
 		6BE8DFD4249C4C1B005EFE66 /* ACRToggleInputView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8DFD3249C4C1B005EFE66 /* ACRToggleInputView.mm */; };
-		6BF339D320A6649500DA5973 /* json.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F4071C771FCCBAEF00AF4FEA /* json.h */; };
+		6BF339D320A6649500DA5973 /* json.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F4071C771FCCBAEF00AF4FEA /* json.h */; };
 		6BF430772190DDCA0068E432 /* ACRQuickReplyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF430752190DDCA0068E432 /* ACRQuickReplyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BF430782190DDCA0068E432 /* ACRQuickReplyView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6BF430762190DDCA0068E432 /* ACRQuickReplyView.mm */; };
 		6BF4307F219129600068E432 /* ACRQuickReplyMultilineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF4307D219129600068E432 /* ACRQuickReplyMultilineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -259,6 +259,7 @@
 		84AE295A27FFA26F00D01B82 /* ContentSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 84AE295527FFA26F00D01B82 /* ContentSource.h */; };
 		84AE295B27FFA26F00D01B82 /* CaptionSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 84AE295627FFA26F00D01B82 /* CaptionSource.h */; };
 		84AE295C27FFA26F00D01B82 /* CaptionSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84AE295727FFA26F00D01B82 /* CaptionSource.cpp */; };
+		908A7A062AB0DC8D007A0F62 /* AdaptiveCardsSharedSwiftModel in Frameworks */ = {isa = PBXBuildFile; productRef = 908A7A052AB0DC8D007A0F62 /* AdaptiveCardsSharedSwiftModel */; };
 		C8DEDF39220CDEB00001AAED /* ActionSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8DEDF37220CDEB00001AAED /* ActionSet.cpp */; };
 		C8DEDF3A220CDEB00001AAED /* ActionSet.h in Headers */ = {isa = PBXBuildFile; fileRef = C8DEDF38220CDEB00001AAED /* ActionSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA1218C621C4509400152EA8 /* ToggleVisibilityTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1218C221C4509300152EA8 /* ToggleVisibilityTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -480,14 +481,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6BF339D220A6647500DA5973 /* CopyFiles */ = {
+		6BF339D220A6647500DA5973 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = Headers/json;
 			dstSubfolderSpec = 1;
 			files = (
-				6BF339D320A6649500DA5973 /* json.h in CopyFiles */,
+				6BF339D320A6649500DA5973 /* json.h in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -749,6 +751,7 @@
 		84AE295527FFA26F00D01B82 /* ContentSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContentSource.h; path = ../../../../shared/cpp/ObjectModel/ContentSource.h; sourceTree = "<group>"; };
 		84AE295627FFA26F00D01B82 /* CaptionSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaptionSource.h; path = ../../../../shared/cpp/ObjectModel/CaptionSource.h; sourceTree = "<group>"; };
 		84AE295727FFA26F00D01B82 /* CaptionSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CaptionSource.cpp; path = ../../../../shared/cpp/ObjectModel/CaptionSource.cpp; sourceTree = "<group>"; };
+		9016FABF2AB0DC660019F590 /* AdaptiveCardsSharedSwiftModel */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AdaptiveCardsSharedSwiftModel; path = ../../../shared/swift/AdaptiveCardsSharedSwiftModel; sourceTree = "<group>"; };
 		9240A5BA903EB4E235296A01 /* Pods-AdaptiveCards.apprelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdaptiveCards.apprelease.xcconfig"; path = "Target Support Files/Pods-AdaptiveCards/Pods-AdaptiveCards.apprelease.xcconfig"; sourceTree = "<group>"; };
 		92C9540BDB87B09349BF0018 /* Pods-AdaptiveCards-AdaptiveCardsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdaptiveCards-AdaptiveCardsTests.release.xcconfig"; path = "Target Support Files/Pods-AdaptiveCards-AdaptiveCardsTests/Pods-AdaptiveCards-AdaptiveCardsTests.release.xcconfig"; sourceTree = "<group>"; };
 		C1BFE0C10A542B2DABBE89DC /* Pods-AdaptiveCardsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdaptiveCardsTests.debug.xcconfig"; path = "Target Support Files/Pods-AdaptiveCardsTests/Pods-AdaptiveCardsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -973,6 +976,7 @@
 			files = (
 				6B421CC121015EDD002F401A /* CoreGraphics.framework in Frameworks */,
 				6B421CC02101503E002F401A /* QuartzCore.framework in Frameworks */,
+				908A7A062AB0DC8D007A0F62 /* AdaptiveCardsSharedSwiftModel in Frameworks */,
 				6BB21219210015A7009EA1BA /* AVKit.framework in Frameworks */,
 				6BB2121821001596009EA1BA /* AVFoundation.framework in Frameworks */,
 				F45A071F1EF4BD67007C6503 /* UIKit.framework in Frameworks */,
@@ -1287,6 +1291,14 @@
 			name = Action.Execute;
 			sourceTree = "<group>";
 		};
+		9016FAB92AB0D6A40019F590 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				9016FABF2AB0DC660019F590 /* AdaptiveCardsSharedSwiftModel */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		CFF954CC29819A6B00F321C3 /* DynamicTypeahead */ = {
 			isa = PBXGroup;
 			children = (
@@ -1330,6 +1342,7 @@
 		F423C0AB1EE1FBA900905679 = {
 			isa = PBXGroup;
 			children = (
+				9016FAB92AB0D6A40019F590 /* Packages */,
 				F423C0B71EE1FBA900905679 /* AdaptiveCards */,
 				F423C0C21EE1FBAA00905679 /* AdaptiveCardsTests */,
 				F45A07191EF4BC44007C6503 /* Frameworks */,
@@ -1922,7 +1935,7 @@
 			buildConfigurationList = F423C0C91EE1FBAA00905679 /* Build configuration list for PBXNativeTarget "AdaptiveCards" */;
 			buildPhases = (
 				8CD5C2E532EDBA1D1879049F /* [CP] Check Pods Manifest.lock */,
-				6BF339D220A6647500DA5973 /* CopyFiles */,
+				6BF339D220A6647500DA5973 /* Copy Files */,
 				F423C0B01EE1FBA900905679 /* Sources */,
 				F423C0B11EE1FBA900905679 /* Frameworks */,
 				F423C0B21EE1FBA900905679 /* Headers */,
@@ -1933,6 +1946,9 @@
 			dependencies = (
 			);
 			name = AdaptiveCards;
+			packageProductDependencies = (
+				908A7A052AB0DC8D007A0F62 /* AdaptiveCardsSharedSwiftModel */,
+			);
 			productName = AdaptiveCards;
 			productReference = F423C0B51EE1FBA900905679 /* AdaptiveCards.framework */;
 			productType = "com.apple.product-type.framework";
@@ -2411,7 +2427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = $GENERATED_MODULEMAP_DIR;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -2444,7 +2460,11 @@
 				INFOPLIST_FILE = AdaptiveCards/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AdaptiveCards",
@@ -2474,7 +2494,11 @@
 				DEVELOPMENT_TEAM = UBF8T346G9;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = AdaptiveCardsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = MSFT.AdaptiveCardsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2542,7 +2566,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = $GENERATED_MODULEMAP_DIR;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2600,7 +2624,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = $GENERATED_MODULEMAP_DIR;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -2633,7 +2657,11 @@
 				INFOPLIST_FILE = AdaptiveCards/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AdaptiveCards",
@@ -2675,7 +2703,11 @@
 				INFOPLIST_FILE = AdaptiveCards/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AdaptiveCards",
@@ -2705,7 +2737,11 @@
 				DEVELOPMENT_TEAM = UBF8T346G9;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = AdaptiveCardsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = MSFT.AdaptiveCardsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2723,7 +2759,11 @@
 				DEVELOPMENT_TEAM = UBF8T346G9;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = AdaptiveCardsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = MSFT.AdaptiveCardsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2791,6 +2831,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		908A7A052AB0DC8D007A0F62 /* AdaptiveCardsSharedSwiftModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AdaptiveCardsSharedSwiftModel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F423C0AC1EE1FBA900905679 /* Project object */;
 }

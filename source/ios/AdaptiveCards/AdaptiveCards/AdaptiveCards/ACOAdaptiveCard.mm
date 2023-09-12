@@ -19,6 +19,7 @@
 #import "SharedAdaptiveCard.h"
 #import "UtiliOS.h"
 #import <Foundation/Foundation.h>
+#import <AdaptiveCardsSharedSwiftModel-Swift.h>
 
 using namespace AdaptiveCards;
 
@@ -61,6 +62,8 @@ using namespace AdaptiveCards;
     const std::string g_version = "1.6";
     ACOAdaptiveCardParseResult *result = nil;
     if (payload) {
+        AdaptiveCardsSharedSwift *swiftParser = [[AdaptiveCardsSharedSwift alloc] init];
+        [swiftParser parseWithPayload:payload];
         try {
             ACOAdaptiveCard *card = [[ACOAdaptiveCard alloc] init];
             std::shared_ptr<ParseResult> parseResult = AdaptiveCard::DeserializeFromString(std::string([payload UTF8String]), g_version);
