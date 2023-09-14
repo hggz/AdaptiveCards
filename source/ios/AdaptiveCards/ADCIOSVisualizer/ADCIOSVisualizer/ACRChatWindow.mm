@@ -94,7 +94,8 @@
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"adaptiveCell" forIndexPath:indexPath];
     if (cell) {
-        ((ACRChatWindowCell *)cell).adaptiveCardView = adaptiveCardView;
+//        ((ACRChatWindowCell *)cell).adaptiveCardView = adaptiveCardView;
+        [((ACRChatWindowCell *)cell) setAdaptiveCardView:adaptiveCardView cardData:adaptiveCardsPayloads[indexPath.row]];
         [cell becomeFirstResponder];
         UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, cell);
     }
@@ -179,6 +180,29 @@
         _contentViewConstraints = [[NSMutableArray alloc] init];
     }
     return self;
+}
+
+- (void)setAdaptiveCardView:(ACRView *)adaptiveCardView cardData:(NSString *)cardData {
+    _adaptiveCardView = adaptiveCardView;
+    if (self.adaptiveCardView) {
+        if (self.contentView.subviews && self.contentView.subviews.count) {
+            [self.contentView.subviews[0] removeFromSuperview];
+        }
+//        [self.contentView addSubview:self.adaptiveCardView];
+//        [self updateLayoutConstraints];
+        
+        // hook
+        UIView *blankView = [ACOAdaptiveCard swiftViewFromAcrView:adaptiveCardView cardData:cardData];
+        blankView.backgroundColor = UIColor.redColor;
+        blankView.translatesAutoresizingMaskIntoConstraints = NO;
+        [self.contentView addSubview:blankView];
+        [NSLayoutConstraint activateConstraints:@[
+            [blankView.centerXAnchor constraintEqualToAnchor:self.contentView.centerXAnchor],
+            [blankView.centerYAnchor constraintEqualToAnchor:self.contentView.centerYAnchor],
+            [self.contentView.heightAnchor constraintEqualToAnchor:blankView.heightAnchor],
+            [self.contentView.widthAnchor constraintEqualToAnchor:blankView.widthAnchor]
+        ]];
+    }
 }
 
 - (void)setAdaptiveCardView:(ACRView *)adaptiveCardView

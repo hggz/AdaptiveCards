@@ -38,6 +38,11 @@ using namespace AdaptiveCards;
     [_inputs addObjectsFromArray:inputs];
 }
 
++ (UIView *)swiftViewFromAcrView:(ACRView *)acrView cardData:(NSString *)cardData {
+    AdaptiveCardsSharedSwift *swiftParser = [[AdaptiveCardsSharedSwift alloc] init];
+    return [swiftParser renderedViewWithCardData:cardData];
+}
+
 - (NSData *)inputs
 {
     if (_inputs) {
