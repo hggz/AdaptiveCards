@@ -16,6 +16,7 @@
 #import "ChoiceSetInput.h"
 #import "HostConfig.h"
 #import "UtiliOS.h"
+#include <TargetConditionals.h>
 
 using namespace AdaptiveCards;
 
@@ -247,7 +248,11 @@ using namespace AdaptiveCards;
 - (void)layoutFilterredView
 {
     CGPoint position = [self.superview convertPoint:self.frame.origin toView:nil];
-    CGSize windowSize = (self.window) ? self.window.bounds.size : UIScreen.mainScreen.bounds.size;
+//#if TARGET_OS_MAC || TARGET_OS_IPHONE || TARGET_OS_IPHONE_SIMULATOR
+//    CGSize windowSize = (self.window) ? self.window.bounds.size : UIScreen.mainScreen.bounds.size;
+//#else
+    CGSize windowSize = self.window.bounds.size;
+//#endif
 
     UIViewController *viewController = traverseResponderChainForUIViewController(_rootView);
     CGRect frame = viewController.view.frame;

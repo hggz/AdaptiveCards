@@ -94,8 +94,8 @@
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"adaptiveCell" forIndexPath:indexPath];
     if (cell) {
-//        ((ACRChatWindowCell *)cell).adaptiveCardView = adaptiveCardView;
-        [((ACRChatWindowCell *)cell) setAdaptiveCardView:adaptiveCardView cardData:adaptiveCardsPayloads[indexPath.row]];
+        ((ACRChatWindowCell *)cell).adaptiveCardView = adaptiveCardView;
+//        [((ACRChatWindowCell *)cell) setAdaptiveCardView:adaptiveCardView cardData:adaptiveCardsPayloads[indexPath.row]];
         [cell becomeFirstResponder];
         UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, cell);
     }

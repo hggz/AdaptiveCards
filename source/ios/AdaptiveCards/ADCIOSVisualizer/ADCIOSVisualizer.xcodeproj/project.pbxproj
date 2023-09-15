@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -93,8 +93,9 @@
 		6BFF998525F941BE0028069F /* CustomActionOpenURLRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = F4F255711F993CD200A80D39 /* CustomActionOpenURLRenderer.mm */; };
 		6BFF9A12260132800028069F /* Action.ExecuteTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF9A11260132800028069F /* Action.ExecuteTest.mm */; };
 		6BFF9A18260155240028069F /* Action.Execute.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BFF9A17260155240028069F /* Action.Execute.json */; };
+		908A7A092AB4A3B4007A0F62 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908A7A082AB4A3B4007A0F62 /* SwiftUIView.swift */; };
 		A10F512B165C52FC9C82CC5B /* Pods_ADCIOSVisualizer_ADCIOSVisualizerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3F74BE29E1CF92C4FAFB8C /* Pods_ADCIOSVisualizer_ADCIOSVisualizerUITests.framework */; };
-		BE8EE3DDAB612EEC230F0437 /* Pods_ADCIOSVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C74931A3EA41F6932989B5B /* Pods_ADCIOSVisualizer.framework */; };
+		BE8EE3DDAB612EEC230F0437 /* Pods_ADCIOSVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C74931A3EA41F6932989B5B /* Pods_ADCIOSVisualizer.framework */; platformFilter = ios; };
 		F423C0771EE1FB6100905679 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F423C0761EE1FB6100905679 /* main.m */; };
 		F423C07A1EE1FB6100905679 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F423C0791EE1FB6100905679 /* AppDelegate.m */; };
 		F423C07D1EE1FB6100905679 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F423C07C1EE1FB6100905679 /* ViewController.m */; };
@@ -241,6 +242,8 @@
 		6BFF9A11260132800028069F /* Action.ExecuteTest.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Action.ExecuteTest.mm; sourceTree = "<group>"; };
 		6BFF9A17260155240028069F /* Action.Execute.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Action.Execute.json; sourceTree = "<group>"; };
 		8C74931A3EA41F6932989B5B /* Pods_ADCIOSVisualizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADCIOSVisualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		908A7A072AB4A3B4007A0F62 /* ADCIOSVisualizer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADCIOSVisualizer-Bridging-Header.h"; sourceTree = "<group>"; };
+		908A7A082AB4A3B4007A0F62 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		C4AE7CE62B15FF33461CE4D2 /* Pods-ADCIOSVisualizerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADCIOSVisualizerUITests.release.xcconfig"; path = "Target Support Files/Pods-ADCIOSVisualizerUITests/Pods-ADCIOSVisualizerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D7181A8AD0E889C79FE0E50B /* Pods-ADCIOSVisualizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADCIOSVisualizer.release.xcconfig"; path = "Target Support Files/Pods-ADCIOSVisualizer/Pods-ADCIOSVisualizer.release.xcconfig"; sourceTree = "<group>"; };
 		E0D9B344ECC7442086CA0C7A /* Pods-ADCIOSVisualizer-ADCIOSVisualizerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADCIOSVisualizer-ADCIOSVisualizerUITests.release.xcconfig"; path = "Target Support Files/Pods-ADCIOSVisualizer-ADCIOSVisualizerUITests/Pods-ADCIOSVisualizer-ADCIOSVisualizerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -497,6 +500,8 @@
 				6BA9091A23985CB5009421CA /* Adaptive1.0.png */,
 				6B31EC7E28E51F3C00F56F05 /* ACEditorViewController.m */,
 				6B31EC8028E51F6800F56F05 /* ACEditorViewController.h */,
+				908A7A082AB4A3B4007A0F62 /* SwiftUIView.swift */,
+				908A7A072AB4A3B4007A0F62 /* ADCIOSVisualizer-Bridging-Header.h */,
 			);
 			path = ADCIOSVisualizer;
 			sourceTree = "<group>";
@@ -544,7 +549,6 @@
 				F423C06F1EE1FB6100905679 /* Frameworks */,
 				F423C0701EE1FB6100905679 /* Resources */,
 				F423C0D51EE1FE3A00905679 /* Embed Frameworks */,
-				ACDC4A93930665EB832037BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -581,7 +585,6 @@
 				F423C0951EE1FB6100905679 /* Sources */,
 				F423C0961EE1FB6100905679 /* Frameworks */,
 				F423C0971EE1FB6100905679 /* Resources */,
-				7151D08A1D6834C366376AD0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -605,6 +608,7 @@
 					F423C0711EE1FB6100905679 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 9KBH5RKYEW;
+						LastSwiftMigration = 1430;
 						ProvisioningStyle = Automatic;
 					};
 					F423C08D1EE1FB6100905679 = {
@@ -754,42 +758,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7151D08A1D6834C366376AD0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ADCIOSVisualizer-ADCIOSVisualizerUITests/Pods-ADCIOSVisualizer-ADCIOSVisualizerUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MicrosoftFluentUI/FluentUI.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FluentUI.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADCIOSVisualizer-ADCIOSVisualizerUITests/Pods-ADCIOSVisualizer-ADCIOSVisualizerUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ACDC4A93930665EB832037BA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ADCIOSVisualizer/Pods-ADCIOSVisualizer-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MicrosoftFluentUI/FluentUI.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FluentUI.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADCIOSVisualizer/Pods-ADCIOSVisualizer-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E7D1BAA0A3924660C4C1D1C3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -821,6 +789,7 @@
 			files = (
 				6B9BDFCC20F6D11F00F13155 /* ADCResolver.m in Sources */,
 				F4F44BAA204CF98900A2F24C /* CustomProgressBarRenderer.mm in Sources */,
+				908A7A092AB4A3B4007A0F62 /* SwiftUIView.swift in Sources */,
 				F4D33E861F04705800941E44 /* ACVTableViewController.m in Sources */,
 				6BF339D620A665E600DA5973 /* CustomTextBlockRenderer.mm in Sources */,
 				6BA88FD12545337C00BF2CDB /* CustomActionSetRenderer.mm in Sources */,
@@ -956,6 +925,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.2.5;
@@ -966,10 +936,19 @@
 					"APPRELEASE=1",
 				);
 				INFOPLIST_FILE = ADCIOSVisualizer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Microsoft.ADCIOSVisualizer-df";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ADCIOSVisualizer/ADCIOSVisualizer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,7";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = AppRelease;
@@ -977,13 +956,22 @@
 		6BC1C778286BB5FA0084D1D9 /* AppRelease */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UBF8T346G9;
 				INFOPLIST_FILE = ADCIOSVisualizerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = MSFT.ADCIOSVisualizerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,7";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ADCIOSVisualizer.app/ADCIOSVisualizer";
 			};
 			name = AppRelease;
@@ -996,7 +984,11 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UBF8T346G9;
 				INFOPLIST_FILE = ADCIOSVisualizerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = MSFT.ADCIOSVisualizerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = ADCIOSVisualizer;
@@ -1125,15 +1117,26 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.2.5;
 				DEVELOPMENT_TEAM = 9KBH5RKYEW;
 				INFOPLIST_FILE = ADCIOSVisualizer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Microsoft.ADCIOSVisualizer-df";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ADCIOSVisualizer/ADCIOSVisualizer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,7";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1144,15 +1147,25 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.2.5;
 				DEVELOPMENT_TEAM = 9KBH5RKYEW;
 				INFOPLIST_FILE = ADCIOSVisualizer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Microsoft.ADCIOSVisualizer-df";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ADCIOSVisualizer/ADCIOSVisualizer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,7";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1160,13 +1173,22 @@
 		F423C0A61EE1FB6100905679 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UBF8T346G9;
 				INFOPLIST_FILE = ADCIOSVisualizerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = MSFT.ADCIOSVisualizerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,7";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ADCIOSVisualizer.app/ADCIOSVisualizer";
 			};
 			name = Debug;
@@ -1174,13 +1196,22 @@
 		F423C0A71EE1FB6100905679 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UBF8T346G9;
 				INFOPLIST_FILE = ADCIOSVisualizerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = MSFT.ADCIOSVisualizerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,7";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ADCIOSVisualizer.app/ADCIOSVisualizer";
 			};
 			name = Release;
@@ -1193,7 +1224,11 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UBF8T346G9;
 				INFOPLIST_FILE = ADCIOSVisualizerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = MSFT.ADCIOSVisualizerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = ADCIOSVisualizer;
@@ -1208,7 +1243,11 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UBF8T346G9;
 				INFOPLIST_FILE = ADCIOSVisualizerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = MSFT.ADCIOSVisualizerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = ADCIOSVisualizer;

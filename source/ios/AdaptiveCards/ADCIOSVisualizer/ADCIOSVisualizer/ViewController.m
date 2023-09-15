@@ -18,6 +18,7 @@
 #import "CustomProgressBarRenderer.h"
 #import "CustomTextBlockRenderer.h"
 #import <SafariServices/SafariServices.h>
+#import <ADCIOSVisualizer-Swift.h>
 
 // the width of the AdaptiveCards does not need to be set.
 // if the width for Adaptive Cards is zero, the width is determined by the contraint(s) set externally on the card.
@@ -104,12 +105,20 @@ CGFloat kFileBrowserWidth = 0;
     }
 }
 
+- (void)addSwiftUI:(UIView *)subView
+{
+    ADCIOSSwift *swiftBridge = [ADCIOSSwift new];
+    UIViewController *swiftController = [swiftBridge getHostViewControllerWithSubview:subView];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     _global_queue = dispatch_get_main_queue();
 
-    kFileBrowserWidth = [[UIScreen mainScreen] bounds].size.width - 32.0f;
+//    kFileBrowserWidth = [[UIScreen mainScreen] bounds].size.width - 32.0f;
+//    kFileBrowserWidth = self.view.window.bounds.size.width - 32.0f;
+    kFileBrowserWidth = 300.0f;
     kAdaptiveCardsWidth = kFileBrowserWidth;
     [self registerForKeyboardNotifications];
 
@@ -131,7 +140,7 @@ CGFloat kFileBrowserWidth = 0;
     [registration setCustomActionRenderer:customActionRenderer key:type1];
 
     self.ACVTabVC = [[ACVTableViewController alloc] init];
-    [self addChildViewController:self.ACVTabVC];
+//    [self addChildViewController:self.ACVTabVC];
     self.ACVTabVC.delegate = self;
     self.ACVTabVC.tableView.sectionFooterHeight = 5;
     self.ACVTabVC.tableView.sectionHeaderHeight = 5;
@@ -193,6 +202,7 @@ CGFloat kFileBrowserWidth = 0;
     [self.view addSubview:self.chatWindow];
 
     UITableView *chatWindow = self.chatWindow;
+//    chatWindow.hidden = YES;
 
     // if the app is being tested we render an extra layout that contains the
     // retrieved input values json
